@@ -15,7 +15,23 @@ public class Point {
 	 * @param y the y
 	 */
 	Point(Double x, Double y) {
-		this.x = y;
+		this.x = x;
 		this.y = y;
+	}
+	
+	public double getX()
+	{
+		return x;
+	}
+	
+	public double getY()
+	{
+		return y;
+	}
+	
+	public boolean comparePoint(Point p)
+	{
+		return ((x == p.getX()) && (y == p.getY()));
+		
 	}
 }

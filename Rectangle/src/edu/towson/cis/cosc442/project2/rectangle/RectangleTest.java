@@ -13,7 +13,8 @@ public class RectangleTest {
 	
 	/** Declaring necessary test objects for {@link Rectangle} */
 	Rectangle rect1, rect2;
-
+	Point p1;
+	
 	/**
 	 * Initializes the necessary test objects for the test cases to use.
 	 *
@@ -23,6 +24,7 @@ public class RectangleTest {
 	public void setUp() throws Exception {
 		rect1 = new Rectangle(new Point(2.0, 2.0), new Point(4.0, 7.0));
 		rect2 = new Rectangle(new Point(2.0, 6.0), new Point(4.0, 3.0));
+		p1 = new Point(2.0, 5.0);
 	}
 
 	/**
@@ -33,7 +35,7 @@ public class RectangleTest {
 		assertEquals(10.0, rect1.getArea(),0.001);
 		assertEquals(6.0, rect2.getArea(),0.001);
 	}
-
+	
 	/**
 	 * Test for the getDiagonal() method of the {@link Rectangle} class.
 	 */
@@ -41,6 +43,50 @@ public class RectangleTest {
 	public void testGetDiagonal() {
 		assertEquals(5.3852, rect1.getDiagonal(), 0.0001);
 		assertEquals(3.6056, rect2.getDiagonal(), 0.0001);
+	}
+	
+	/**
+	 * Test for the getLength() method of the {@link Rectangle} class.
+	 */
+	@Test
+	public void testGetLength()
+	{
+		assertEquals(2.0, rect1.getLength(), 0.0);
+	}
+	
+	/**
+	 * Test for the getWidth() method of the {@link Rectangle} class.
+	 */
+	@Test
+	public void testGetWidth()
+	{
+		assertEquals(5.0, rect1.getWidth(), 0.0);
+	}
+	
+	/**
+	 * Test for the getX() method of the {@link Point} class.
+	 */
+	@Test
+	public void testGetX() {
+		assertEquals(2.0, p1.getX(), 0.0);
+	}
+	
+	/**
+	 * Test for the getX() method of the {@link Point} class.
+	 */
+	@Test
+	public void testGetY() {
+		assertEquals(5.0, p1.getY(), 0.0);
+	}
+	
+	/**
+	 * Test for the comparePoint() method of the {@link Point} class.
+	 */
+	@Test
+	public void testComparePoint()
+	{
+		Point p2 = new Point(2.0, 5.0);
+		assertTrue(p1.comparePoint(p2));
 	}
 	
 	/**

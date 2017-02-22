@@ -26,7 +26,8 @@ public class Rectangle {
 	 * @return the area
 	 */
 	public Double getArea() {
-		return Math.abs((p2.x - p1.x) * (p2.y - p1.y));
+		//return Math.abs((p2.x - p1.x) * (p2.y - p1.y));
+		return getLength() * getWidth();
 	}
 	
 	/**
@@ -36,5 +37,24 @@ public class Rectangle {
 	 */
 	public Double getDiagonal() {
 		return Math.sqrt(Math.pow((p2.x - p1.x), 2) + Math.pow((p2.y - p1.y), 2));
+	}
+	/**
+	 * Gets the length of the rectangle
+	 * 
+	 * @return the length
+	 */
+	public double getLength()
+	{
+		return Math.abs(p2.x - p1.x);
+	}
+	
+	/**
+	 * Gets the width of the rectangle
+	 * 
+	 * @return the width
+	 */
+	public double getWidth()
+	{
+		return Math.abs(p2.y - p1.y);
 	}
 }
