@@ -13,7 +13,6 @@ public class RectangleTest {
 	
 	/** Declaring necessary test objects for {@link Rectangle} */
 	Rectangle rect1, rect2;
-	Point p1;
 	
 	/**
 	 * Initializes the necessary test objects for the test cases to use.
@@ -24,7 +23,6 @@ public class RectangleTest {
 	public void setUp() throws Exception {
 		rect1 = new Rectangle(new Point(2.0, 2.0), new Point(4.0, 7.0));
 		rect2 = new Rectangle(new Point(2.0, 6.0), new Point(4.0, 3.0));
-		p1 = new Point(2.0, 5.0);
 	}
 
 	/**
@@ -61,32 +59,6 @@ public class RectangleTest {
 	public void testGetWidth()
 	{
 		assertEquals(5.0, rect1.getWidth(), 0.0);
-	}
-	
-	/**
-	 * Test for the getX() method of the {@link Point} class.
-	 */
-	@Test
-	public void testGetX() {
-		assertEquals(2.0, p1.getX(), 0.0);
-	}
-	
-	/**
-	 * Test for the getX() method of the {@link Point} class.
-	 */
-	@Test
-	public void testGetY() {
-		assertEquals(5.0, p1.getY(), 0.0);
-	}
-	
-	/**
-	 * Test for the comparePoint() method of the {@link Point} class.
-	 */
-	@Test
-	public void testComparePoint()
-	{
-		Point p2 = new Point(2.0, 5.0);
-		assertTrue(p1.comparePoint(p2));
 	}
 	
 	/**

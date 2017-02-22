@@ -28,10 +28,4 @@ public class Point {
 	{
 		return y;
 	}
-	
-	public boolean comparePoint(Point p)
-	{
-		return ((x == p.getX()) && (y == p.getY()));
-		
-	}
 }
