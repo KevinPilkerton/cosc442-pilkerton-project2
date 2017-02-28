@@ -11,14 +11,6 @@ public class VendingMachineException extends RuntimeException {
 	// this course.
 	private static final long serialVersionUID = 1L;
 	
-	
-	/**
-	 * Default constructor
-	 */
-	public VendingMachineException() {
-	
-	}
-
 	/**
 	 * Constructor with an error message
 	 * @param reason The error message for the exception

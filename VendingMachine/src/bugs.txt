@@ -1,0 +1,7 @@
+Vending Machine Exception class:
+1.) Do not need the default constructor.  It is never used in the program.
+
+Vending Machine Class:
+
+
+Vending Machine Item Class:
