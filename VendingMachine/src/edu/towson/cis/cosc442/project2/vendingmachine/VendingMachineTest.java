@@ -192,7 +192,6 @@ public class VendingMachineTest
 	@Test
 	public void testMakePurchaseWhenItemDoesNotExistInSlot()
 	{
-		assertFalse(myVendingMachine.makePurchase("A"));
 	}
 	
 	/**
